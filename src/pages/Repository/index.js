@@ -12,7 +12,7 @@ export default class Repository extends Component {
     this.state = {
       repository: {},
       issues: [],
-      loading: true,
+      loading: 1,
     };
   }
 
@@ -36,7 +36,7 @@ export default class Repository extends Component {
     this.setState({
       repository: repository.data,
       issues: issues.data,
-      loading: false,
+      loading: 0,
     });
   }
 

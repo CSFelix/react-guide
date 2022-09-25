@@ -13,7 +13,7 @@ export default class Main extends Component {
     this.state = {
       newRepo: '',
       repositories: [],
-      loading: false,
+      loading: 0,
     };
 
     this.handleInputChange = event => {
@@ -23,7 +23,7 @@ export default class Main extends Component {
     this.handleSubmit = async event => {
       event.preventDefault();
 
-      this.setState({ loading: true });
+      this.setState({ loading: 1 });
 
       // getting repo info from git hub
       const { newRepo, repositories } = this.state;
@@ -38,7 +38,7 @@ export default class Main extends Component {
       this.setState({
         repositories: [...repositories, data],
         newRepo: '',
-        loading: false,
+        loading: 0,
       });
 
     };
