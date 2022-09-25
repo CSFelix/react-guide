@@ -1,4 +1,4 @@
-<h1 align="center">🌟 Easy Barber 🌟</h1>
+<h1 align="center">🌟 React Guide 🌟</h1>
 
 ----
 <br>
