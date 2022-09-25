@@ -10,7 +10,7 @@ export default function Routes() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact element={<Main />} />
-        <Route path="/repository" element={<Repository />} />
+        <Route path="/repository/:repository" element={<Repository />} />
       </Switch>
   </BrowserRouter>
   );
