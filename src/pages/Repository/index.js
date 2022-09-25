@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import * as PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import api from '../../services/api';
 import Container from '../../components/Container';
@@ -17,8 +18,8 @@ export default class Repository extends Component {
   }
 
   async componentDidMount() {
-    const params = useParams();
-    const repoName = decodeURIComponent(params.repository);
+    const { match } = this.props;
+    const repoName = decodeURIComponent(match.params.repository);
 
     // promisses are used when I have two await functions
     // that don't depend on each other to run and I wanna
@@ -87,3 +88,11 @@ export default class Repository extends Component {
     );
   }
 }
+
+Repository.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      repository: PropTypes.string,
+    }),
+  }).isRequired,
+};
