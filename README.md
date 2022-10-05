@@ -12,6 +12,7 @@
 
 ### `⚒️ Tools ⚒️`
 
+* Visual Studio Code;
 
 
 ----
