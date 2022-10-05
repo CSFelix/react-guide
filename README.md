@@ -13,7 +13,7 @@
 ### `⚒️ Tools ⚒️`
 
 * Visual Studio Code;
-
+* Git;
 
 ----
 <br>
