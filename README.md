@@ -12,12 +12,7 @@
 
 ### `⚒️ Tools ⚒️`
 
-* Visual Studio Code;
-* Git;
-* React,
-* Yarn;
-* Babel, WebPack, React, Loaders, Prop-Types, ESLint, Prettier, React-Router-Dom, Styled Components, React Icons, Prop Types, Axios,
-* GitHub API.
+
 
 ----
 <br>
